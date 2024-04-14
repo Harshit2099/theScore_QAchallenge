@@ -1,0 +1,11 @@
+Required software
+
+1 node js
+2 Java JDK 11
+3 Android-studio
+4 Appium-Inspector
+5 Appium-server
+6 Android emulator
+7 APK file
+8 Eclipse IDE with maven project (use the POM file from the attachment to install dependencies)
+

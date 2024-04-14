@@ -1,0 +1,35 @@
+----------------pre-config-------------------
+download maven Binary zip 
+place it in local.
+set environment variable as MAVEN_HOME
+set bin path in path file eg= %MAVEN_HOME%\bin
+
+
+in the pom.xml edit the config like below
+
+     <artifactId>maven-compiler-plugin</artifactId>
+         <version>3.8.0</version>
+            <configuration>
+                <source>8</source>
+                <target>8</target>
+            </configuration>
+
+------ to run in cmd using maven commands----------------
+open the cmd form the path eg = C:\<path where the tese cases located>\Appium_POM
+type the cmd 
+
+mvn test -Psmoke		// no space between -P and profile name
+
+or 
+mvn test -Pregression		// no space between -P and profile name
+
+information about the cmd in detail
+mvn = maven
+test = test
+-P = profile<without Space>NameOfTheProfile
+-D = run time parameter
+
+------ to run in cmd using maven cmds to override parameters defined in data.properties----------------
+
+ mvn test -Psmoke -Dip_Address=127.0.0.1		// no spaces between -P and -D, the value ip_Address is defined in the from data.properties
+ 

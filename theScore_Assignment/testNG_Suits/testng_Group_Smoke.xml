@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="smoke"/>
+		</run>
+	</groups>
+	
+	<listeners>
+	<listener class-name="org.Appium_Utilities.Report_Listeners"/>	
+	</listeners>
+	
+  <test thread-count="5" name="theScore_Full">
+    <classes>            
+      <class name="org.Appium_POM.TA_20_theScore_assignment"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="theScore_Two_Runs">
+    <classes>            
+      <class name="org.Appium_POM.TA_20_theScore_assignment"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
